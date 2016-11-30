@@ -66,6 +66,7 @@
     "start": "./bin/start.js",
     "pretest": "standard",
     "test": "nyc tap --no-cov './test/{unit,integration}/**/*-test.js'",
-    "postinstall": "node ./bin/setup.js"
+    "postinstall": "node ./bin/setup.js",
+    "dont-break": "DEBUG=dont-break dont-break --timeout 300"
   }
 }
